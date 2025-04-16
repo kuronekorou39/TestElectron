@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ダッシュボード</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dashboard-page">
+    <div class="sidebar">
+        <h2 class="logo">案件管理ツール（仮）</h2>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">📁 案件管理</div>
+            <ul class="submenu">
+                <li onclick="loadPage('案件一覧')">📄 案件一覧</li>
+                <li onclick="loadPage('案件作成')">📝 案件作成</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">👥 顧客管理</div>
+            <ul class="submenu">
+                <li onclick="loadPage('顧客一覧')">👤 顧客一覧</li>
+                <li onclick="loadPage('会社一覧')">🏢 会社一覧</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">📊 診断管理</div>
+            <ul class="submenu">
+                <li onclick="loadPage('報告書一覧')">📋 報告書一覧</li>
+                <li onclick="loadPage('診断対象一覧')">🔍 診断対象一覧</li>
+                <li onclick="loadPage('指摘事項一覧')">⚠️ 指摘事項一覧</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">👨‍💼 担当者管理</div>
+            <ul class="submenu">
+                <li onclick="loadPage('メンバー一覧')">👥 メンバー一覧</li>
+                <li onclick="loadPage('グループ一覧')">🧑‍🤝‍🧑 グループ一覧</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">🔧 ユーザー関連</div>
+            <ul class="submenu">
+                <li onclick="loadPage('マイページ')">🙋 マイページ</li>
+                <!-- <li onclick="loadPage('設定')">⚙️ 設定</li> -->
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title" onclick="toggleMenu(this)">⚙️ システム管理</div>
+            <ul class="submenu">
+                <li onclick="loadPage('マスタDB')">🛠 マスタDB</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1 id="page-title">ダッシュボード</h1>
+        <div id="page-content">
+            ようこそ！ここに各画面の内容が表示されます。
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ログイン</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <h2>ログイン</h2>
+  <input type="text" id="username" placeholder="ユーザー名" />
+  <input type="password" id="password" placeholder="パスワード" />
+  <button onclick="login()">ログイン</button>
+
+  <script src="login.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン - 案件管理ツール（仮）</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-logo">
+      <img src="DBcat.png" alt="業務ツールロゴ">
+    </div>
+    <h2>案件管理ツール（仮）</h2>
+    <form id="login-form" method="post" onsubmit="login(event)">
+      <div class="input-group">
+        <label for="username">ユーザー名</label>
+        <input type="text" id="username" name="username" placeholder="ユーザー名" >
+      </div>
+      <div class="input-group">
+        <label for="password">パスワード</label>
+        <input type="password" id="password" name="password" placeholder="パスワード" >
+      </div>
+      <button type="submit" class="btn-login">ログイン</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

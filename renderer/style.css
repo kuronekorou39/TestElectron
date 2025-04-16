@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .dashboard-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #2f3542;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sidebar .logo {
+    margin-bottom: 20px;
+  }
+  
+  .menu-category {
+    margin-bottom: 10px;
+  }
+  
+  .category-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .submenu {
+    list-style: none;
+    padding-left: 15px;
+    display: none;
+  }
+  
+  .submenu li {
+    cursor: pointer;
+    padding: 6px 0;
+    color: #dfe4ea;
+  }
+  
+  .submenu li:hover {
+    text-decoration: underline;
+    color: #ffa502;
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 30px;
+    background: #f1f2f6;
+  }
